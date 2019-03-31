@@ -1,0 +1,380 @@
+body
+  margin: 0px
+  font-display: swap
+  font-family: 'Sintony', sans-serif !important
+.wrapper
+  max-width: 305px
+  margin: 0px auto
+h1, h2, h3, h4
+  font-family: 'Playfair Display', serif !important 
+a
+  text-decoration: none !important      
+.fontSize085
+  font-size: 0.85rem
+.fontSize125
+  font-size: 1.25rem
+.fontSize150
+  font-size: 1.5rem
+.fontSize200
+  font-size: 2.0rem
+.fontSize300
+  font-size: 3.0rem  
+.orangeText
+  color: orange
+.pinkText
+  color: #fe4c8d
+.foodMenuBorder
+  border-bottom: 1px #a3b0ba dashed
+.fontHeading
+  font-family: 'Playfair Display', serif !important  
+.price
+  user-select: none
+  &::before
+    content: "$"
+    position: relative
+    top: -7.5px
+    font-size: 1rem 
+.carousel
+  ol
+    li
+      background-color: transparent
+      border-radius: 50%
+      border: 3px solid orange
+      height: 20px
+      width: 20px
+      margin: 0.35em
+    .active
+      background-color: transparent
+      &::after
+        content: ""
+        background-color: orange
+        border-radius: 50%
+        height: 10px
+        width: 10px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)           
+::-webkit-scrollbar
+  width: 7.5px
+::-webkit-scrollbar-track
+  background: #383838
+::-webkit-scrollbar-thumb 
+  background: #c4c4c4
+  border-radius: 10px
+  &:hover
+    background: #efefef
+@keyframes underSliderPhoneIcon
+  0%
+    transform: rotate(-60deg)
+  100%
+    transform: rotate(-45deg)       
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+nav
+  #dropdownCart
+    background-color: transparent
+    .fa-shopping-cart
+      &::after
+        content: attr(data-cart-counter)
+        font-family: 'Sintony', sans-serif !important
+        background-color: red
+        border-radius: 50%
+        color: white
+        font-size: 0.75em
+        position: absolute
+        top: 0%
+        left: 22px
+        width: 17px
+        height: 17px
+        display: grid
+        place-items: center
+  .cartMenuPrice
+    &::after
+      content: "$"
+      position: relative
+      left: 5px      
+  #menuBtnIcon
+    background: 50% 50% no-repeat url("/img/menuBtnIcon.png")
+    width: 21px
+    height: 18px
+    display: inline-block
+    margin-right: 0.25em           
+////////////////////////SLIDE/////////////////////////////
+#carouselHeader
+  h3, p
+    text-shadow: 1px 1px 3px black
+////////////////////////SLIDE/////////////////////////////
+.underSlider
+  background-color: #edf1f3
+  .exploreMenu
+    background-color: #fe4c8d
+    border: 1px dashed white
+    outline: 10px solid #fe4c8d
+    margin: 2rem 0rem 1rem
+    padding: 3rem 2.5rem
+    font-size: 1.5em
+    position: relative
+    z-index: 999
+    a 
+      color: white
+      text-decoration: none
+      user-select: none
+    #exploreMenuIcon
+      background: 50% 50% no-repeat url("/img/exploreMenuIcon.png")
+      position: absolute
+      top: -25%
+      left: calc(50% - 83px / 2.25)
+      background-color: black
+      border: 4px solid #fe4c8d
+      border-radius: 50%
+      height: 83px
+      width: 83px      
+  .fa-comments
+    font-size: 2.25em
+    margin-right: 0.75rem
+  .fa-chevron-right
+    margin-left: 0.75rem
+    background-color: orange
+    border-radius: 50%
+    padding: 0.812em 1em
+    position: relative
+    cursor: pointer
+    transition: all ease-in-out 0.15s
+    &:hover
+      color: orange
+      background-color: #212529
+    &::after
+      content: "" 
+      position: absolute
+      padding: 1em
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      border-radius: 50%
+      border: 2px solid white
+    &:hover::after
+      border-color: orange
+  .fa-phone-volume
+    font-size: 2.25em
+    margin-right: 0.75rem
+    transform: rotate(-45deg)
+    &:hover
+      animation: underSliderPhoneIcon 0.5s ease-in-out infinite alternate
+////////////////////////SLIDE/////////////////////////////
+.special
+  background: 50% 0% no-repeat url(/img/special.jpg)
+  .specialBgImg
+    display: none
+  #carouselSpecial
+    ol
+      top: 1%
+      right: 1%  
+    .specialCardBottom
+      border-top: 1px solid #e1e1e1 
+  .foodMenu
+    .foodMenuActive
+        filter: hue-rotate(300deg) 
+    .btn
+      &:hover span
+        filter: hue-rotate(320deg) 
+      span
+        height: 27px
+        width: 25px 
+      .foodMenuIcon1
+        background: 50% 50% no-repeat url("/img/foodMenuIcon1.png")    
+      .foodMenuIcon2
+        background: 50% 50% no-repeat url("/img/foodMenuIcon2.png")
+      .foodMenuIcon3
+        background: 50% 50% no-repeat url("/img/foodMenuIcon3.png")
+      .foodMenuIcon4
+        background: 50% 50% no-repeat url("/img/foodMenuIcon4.png")  
+      .foodMenuIcon5
+        background: 50% 50% no-repeat url("/img/foodMenuIcon5.png")
+      .foodMenuIcon6
+        background: 50% 50% no-repeat url("/img/foodMenuIcon6.png")
+      .foodMenuIcon7
+        background: 50% 50% no-repeat url("/img/foodMenuIcon7.png")
+    .foodMenuItem   
+      &:nth-child(even)
+        display: none
+      .UIadd, .UIremove
+        width: 40px
+        border: 2px solid orange     
+        outline: 5px solid transparent
+        cursor: pointer
+        user-select: none
+        font-family: sans-serif
+        transition: all ease-in-out 0.15s
+        &:hover
+          background-color: #212529
+          outline-color: #212529        
+////////////////////////SLIDE/////////////////////////////
+.reviews
+  background: 50% 50%/cover no-repeat url(/img/reviews.jpg) 
+  .reviewsItemImg
+    width: 75px
+    height: 75px
+////////////////////////SLIDE/////////////////////////////
+.reservation
+  background-color: #edf1f3
+  form
+    input
+      transition: all ease-in-out 0.15s
+      &::-webkit-inner-spin-button, &::-webkit-calendar-picker-indicator
+        display: none
+      &:focus
+        outline: none
+        border-bottom-color: #55acee !important
+      &:focus + .reservationInputIcon
+        color: #55acee
+        transform: scale(0)
+    .reservationInputIcon
+      position: absolute
+      top: 12px
+      left: calc(100% - 40px)
+      transition: all ease-in-out 0.5s  
+////////////////////////SLIDE/////////////////////////////
+.footer
+  background-color: #373844
+  ul 
+    list-style: none
+    i, img
+      width: 50px
+      height: 50px
+      display: grid
+      place-items: center
+      border-radius: 50%
+      color: white
+      &:hover
+        filter: brightness(0.85)
+    .fa-facebook-f
+      background-color: #3b5998
+    .fa-twitter
+      background-color: #55acee
+    .fa-google-plus-g
+      background-color: #dd4b39
+  form
+    i 
+      position: absolute
+      font-size: 1.5rem
+      color: orange
+      left: 30px
+  img
+    width: 186px
+    height: 52px
+    transition: all ease-in-out 0.15s
+    &:hover
+      filter: brightness(0.85)
+  .licence
+    &::before, &::after
+      content: ""
+      margin: 0.5rem 
+      height: 1px
+      background-color: #52535e
+      flex: 1
+    a 
+      margin-left: 0.25rem  
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+@media screen and (min-width: 360px)
+  .wrapper, nav
+    max-width: 340px
+    margin: 0px auto 
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE///////////////////////////// 
+@media screen and (min-width: 375px)
+  .wrapper, nav
+    max-width: 355px
+  .reviews
+    .reviewsItemText
+      &::before, &::after
+        font-family: "Font Awesome 5 Free"
+        font-weight: 900
+        font-size: 2rem
+        position: absolute
+      &::before
+        content: "\f10d"
+        top: -1%
+        left: 4%
+      &::after
+        content: "\f10e"
+        right: 4%
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////    
+@media screen and (min-width: 411px)
+  .wrapper, nav
+    max-width: 390px
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////          
+@media screen and (min-width: 731px)
+  .wrapper, nav
+    max-width: 720px
+  #carouselHeader
+    .carousel-caption
+      padding: 0px
+      left: 20%
+      bottom: 15%
+  .special
+    #carouselSpecial
+      .card
+        box-shadow: 0px 1px 15px 10px rgba(0,0,0,0.1)
+        border: none
+  .reviews
+    .reviewsItemText
+      &::before
+        left: 13%
+      &::after
+        right: 13%
+  .reservation
+    background-color: #edf1f3
+    form
+      i
+        left: calc(100% - 35px)                    
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+@media screen and (min-width: 991px)
+  .wrapper, nav
+    max-width: 950px
+  .fontSize150Lg
+    font-size: 1.5rem
+  #carouselHeader
+    .carousel-caption
+      bottom: 30%
+  .underSlider
+    height: 80px
+    .exploreMenu
+      top: -170px
+      margin: 0em 2em
+  .special
+    .specialBgImg
+      display: block
+  .reservation
+    background-color: #edf1f3
+    form
+      input
+        &:hover .reservationInputIcon
+          left: 50%    
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+@media screen and (min-width: 1200px)
+  .wrapper, nav
+    max-width: 1140px
+  #carouselHeader
+    .carousel-caption
+      bottom: 40%
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+////////////////////////SLIDE/////////////////////////////
+@media screen and (min-width: 1500px)
+  #carouselHeader
+    .carousel-caption
+      left: calc(50% - 1140px / 2)
+      text-align: left       
