@@ -44,7 +44,7 @@ Choose different dishes, see their price and amount at nav section of the templa
  ```js
  /** Function explanation
   * New statement
-  @param {dataType} <param name> Param's explanation.
+  * @param {dataType} <param name> Param's explanation.
  */
  
  /* Multi-line comment
@@ -125,7 +125,7 @@ $npm install
  ```js
  /** Объяснение функции
   * Новое утверждение
-  @param {типДанных} <имя параметра> Объяснение параметра.
+  * @param {типДанных} <имя параметра> Объяснение параметра.
  */
  
  /* Многострочный комментарий
